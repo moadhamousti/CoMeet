@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { CodeIcon } from "lucide-react";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import DasboardBtn from "./DasboardBtn";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "./ModeToggle";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
+import DasboardBtn from "@/components/DasboardBtn";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const navLinks = [
   { label: "Home", href: "/home" },
@@ -34,6 +34,18 @@ function Navbar() {
           </span>
         </Link>
 
+        {/* NAV LINKS - Desktop and Tablet */}
+        <div className="hidden md:flex space-x-6">
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="hover:text-primary text-secondary-foreground transition"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
 
         {/* RIGHT SIDE ACTIONS - Desktop and Tablet */}
         <div className="hidden md:flex items-center space-x-4">
