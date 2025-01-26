@@ -39,7 +39,7 @@ function Navbar() {
       <div className="flex items-center justify-between h-16 px-4 lg:px-8 container mx-auto">
         {/* LEFT SIDE - LOGO */}
         <Link
-          href="/home"
+          href="/"
           className="flex items-center gap-2 font-semibold text-2xl font-mono hover:opacity-80 transition-opacity"
         >
           <CodeIcon className="w-8 h-8 text-emerald-500" />

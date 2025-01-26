@@ -39,7 +39,7 @@ function Navbar() {
       <div className="flex items-center justify-between h-16 px-4 lg:px-8 container mx-auto">
         {/* LEFT SIDE - LOGO */}
         <Link
-          href="/home"
+          href="/"
           className="flex items-center gap-2 font-semibold text-2xl font-mono hover:opacity-80 transition-opacity"
         >
           <CodeIcon className="w-8 h-8 text-emerald-500" />
@@ -48,8 +48,7 @@ function Navbar() {
           </span>
         </Link>
 
-        {/* NAV LINKS - Desktop and Tablet */}
-        <div className="hidden md:flex space-x-6 w-full justify-center">
+        <div className="hidden md:flex gap-6 w-full justify-center">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -60,8 +59,6 @@ function Navbar() {
             </Link>
           ))}
         </div>
-
-        {/* RIGHT SIDE ACTIONS - Desktop and Tablet */}
         <div className="hidden md:flex items-center space-x-4">
           <SignedIn>
             <DasboardBtn />
