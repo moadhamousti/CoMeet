@@ -4,9 +4,10 @@ import Link from "next/link";
 import { CodeIcon } from "lucide-react";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
+import LoaderUI from "@/components/LoaderUI";
 import DasboardBtn from "@/components/DasboardBtn";
 import { ModeToggle } from "@/components/ModeToggle";
 
@@ -19,6 +20,19 @@ const navLinks = [
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true); // Simulating loading completion
+    }, 1000); // Set the delay to your preference
+
+    return () => clearTimeout(timer); // Cleanup the timeout on unmount
+  }, []);
+
+  if (!isLoaded) {
+    return <LoaderUI />; // Show loader if not loaded
+  }
 
   return (
     <nav className="border-b">
@@ -46,7 +60,7 @@ function Navbar() {
             </Link>
           ))}
         </div>
-
+        
         {/* RIGHT SIDE ACTIONS - Desktop and Tablet */}
         <div className="hidden md:flex items-center space-x-4">
           <SignedIn>
