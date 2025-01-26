@@ -34,9 +34,20 @@ function Navbar() {
           </span>
         </Link>
 
-
+        {/* RIGHT SIDE ACTIONS - Desktop and Tablet */}
         {/* RIGHT SIDE ACTIONS - Desktop and Tablet */}
         <div className="hidden md:flex items-center space-x-4">
+          <div className="flex space-x-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="hover:text-primary text-secondary-foreground transition"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
           <SignedIn>
             <DasboardBtn />
             <ModeToggle />
