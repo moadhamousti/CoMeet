@@ -49,7 +49,7 @@ function Navbar() {
         </Link>
 
         {/* NAV LINKS - Desktop and Tablet */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 w-full justify-center">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -60,7 +60,7 @@ function Navbar() {
             </Link>
           ))}
         </div>
-        
+
         {/* RIGHT SIDE ACTIONS - Desktop and Tablet */}
         <div className="hidden md:flex items-center space-x-4">
           <SignedIn>
