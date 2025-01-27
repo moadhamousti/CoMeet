@@ -6,6 +6,8 @@ import ConvexClerkProvider from "@/components/providers/ConvexClerkProvider";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Toaster } from "react-hot-toast";
+import { dark } from "@clerk/themes"; // Import the dark theme
+import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,25 +31,34 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ConvexClerkProvider>
-      <html lang="en" suppressHydrationWarning>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+        variables: {
+          colorPrimary: "#2FAD6C",
+      },
+      }}
+    >
+      <ConvexClerkProvider>
+        <html lang="en" suppressHydrationWarning>
+          <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
           >
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system" // Default to system theme
+              enableSystem
+              disableTransitionOnChange
+            >
               <div className="min-h-screen">
                 {/* <Navbar /> */}
                 <main className="px-4 sm:px-6 lg:px-8">{children}</main>
               </div>
-
-
-          </ThemeProvider>
-          <Toaster />
-        </body>
-      </html>
-    </ConvexClerkProvider>
+            </ThemeProvider>
+            <Toaster />
+          </body>
+        </html>
+      </ConvexClerkProvider>
+    </ClerkProvider>
   );
 }
