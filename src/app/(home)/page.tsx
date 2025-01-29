@@ -1,8 +1,12 @@
 "use client";
 import LoaderUI from "@/components/LoaderUI";
+import FooterSection from "@/sections/FooterSection";
 import Hero from "@/sections/Hero";
 import HeroSection from "@/sections/HeroSection";
+import LovedByBuildersSection from "@/sections/LovedByBuildersSection";
+import MarqueeSection from "@/sections/MarqueeSection";
 import Navbar from "@/sections/Navbar";
+import ReadyToBuildSection from "@/sections/ReadyToBuildSection";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -20,13 +24,26 @@ export default function Home() {
     return <LoaderUI />; // Show loader if not loaded
   }
   return (
-    <>
-      <Navbar />
-      <div className="pt-16">
-        <Hero />
+    <div>
+      <div className="px-4 sm:px-6 lg:px-8">
+        <Navbar />
+        <div className="pt-16">
+          <Hero />
+        </div>
+        <HeroSection />
+        <div className="padding">
+          <MarqueeSection />
+        </div>
       </div>
-      <HeroSection />
-      {/* <Footer/> */}
-    </>
+      <div className="">
+          <LovedByBuildersSection />
+        </div>
+      <div className="">
+        <ReadyToBuildSection/>
+      </div>
+      <div className="">
+        <FooterSection />
+      </div>
+    </div>
   );
 }

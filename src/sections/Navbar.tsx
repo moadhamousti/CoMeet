@@ -12,10 +12,10 @@ import DasboardBtn from "@/components/DasboardBtn";
 import { ModeToggle } from "@/components/ModeToggle";
 
 const navLinks = [
-  { label: "Home", href: "/home" },
-  { label: "Features", href: "/features" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "FAQs", href: "/faqs" },
+  { label: "Home", href: "#home" },
+  { label: "Features", href: "#features" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "FAQs", href: "#faqs" },
 ];
 
 function Navbar() {
@@ -132,6 +132,7 @@ function Navbar() {
               ))}
               <SignedIn>
                 <DasboardBtn />
+                <ModeToggle />
                 <UserButton afterSignOutUrl="/" />
               </SignedIn>
               <SignedOut>

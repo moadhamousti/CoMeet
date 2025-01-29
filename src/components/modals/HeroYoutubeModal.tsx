@@ -7,7 +7,7 @@ export function HeroYoutubeModal() {
     <Dialog>
       <DialogTrigger asChild>
         <img
-          src="/images/hero.jpeg"
+          src="/images/hero.svg"
           alt="hero image"
           className="hover:cursor-pointer"
         />
