@@ -295,6 +295,25 @@ html {
   overflow-x: clip;
 }
 
+.crm-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+/*  */
+
+.crm-cont-img {
+  width: calc(100vw - 1.5rem);
+}
+
+@media (min-width: 768px) { /* md breakpoint in Tailwind CSS */
+  .crm-cont-img {
+      width: calc(100vw - 8rem);
+  }
+}
 
 .mrg{
   margin-top: 25px;

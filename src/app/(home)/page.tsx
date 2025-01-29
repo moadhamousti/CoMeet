@@ -1,5 +1,6 @@
 "use client";
 import LoaderUI from "@/components/LoaderUI";
+import CRMSection from "@/sections/CRMSection";
 import FooterSection from "@/sections/FooterSection";
 import Hero from "@/sections/Hero";
 import HeroSection from "@/sections/HeroSection";
@@ -34,8 +35,11 @@ export default function Home() {
         <div className="padding">
           <MarqueeSection />
         </div>
+        <div className="padding">
+          <CRMSection/>
+        </div>
       </div>
-      <div className="">
+      <div className=" padding margin">
           <LovedByBuildersSection />
         </div>
       <div className="">
