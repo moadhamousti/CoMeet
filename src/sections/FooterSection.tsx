@@ -7,7 +7,7 @@ function FooterSection() {
   const data = {
     Product: ["Changelog", "Customer stories", "Security", "Chrome extension"],
     Company: ["About", "Blog", "Links", "Brand"],
-    CodeSync: ["Startups", "Dear flow"],
+    Codevox: ["Startups", "Dear flow"],
     Support: ["Help Center", "Talk to support", "FAQ"],
   };
   return (
@@ -20,7 +20,7 @@ function FooterSection() {
         >
           <CodeIcon className="w-12 h-12 text-emerald-500" />
           <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent text-3xl">
-            CodeSync
+            Codevox
           </span>
         </Link>
       </div>
@@ -49,7 +49,7 @@ function FooterSection() {
         <div>
           <p className="items">Attio for</p>
           <div className="items-cont">
-            {data.CodeSync.map((item, index) => (
+            {data.Codevox.map((item, index) => (
               <p key={index} className="items-par">
                 {item}
               </p>

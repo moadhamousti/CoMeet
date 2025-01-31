@@ -342,6 +342,17 @@ html {
   @media (min-width: 768px) {
     flex-direction: row;
     padding: 0 94px;
+
+  }
+
+}
+
+
+.ready-img {
+
+  /* Media Query for larger screens (md breakpoint) */
+  @media (min-width: 768px) {
+    display: hidden;
   }
 }
 

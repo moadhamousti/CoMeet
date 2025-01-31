@@ -29,8 +29,8 @@ function ReadyToBuildSection() {
           />
         </div>
       </div>
-      <div>
-        <img src="/images/ready_to_build.png" alt="security" />
+      <div className="">
+        <img className="" src="/images/ready_to_build.png" alt="security" />
       </div>
     </section>
   );
