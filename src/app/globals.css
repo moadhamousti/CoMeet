@@ -265,12 +265,12 @@ html {
 }
 
 .btn-test {
-  margin: 0 auto; /* Center horizontally */
-  border: 1px solid #31373D; /* Border with specified color */
-  color: #EDEEF0; /* Text color */
-  background-color: transparent; /* Transparent background */
-  border-radius: 0.5rem; /* Rounded corners (lg size) */
-  display: block; /* Block-level element */
+  margin: 0 auto; 
+  border: 1px solid #31373D;
+  color: #EDEEF0;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  display: block;
   margin-top: 25px;
 }
 
@@ -303,13 +303,12 @@ html {
   margin-bottom: 64px;
 }
 
-/*  */
 
 .crm-cont-img {
   width: calc(100vw - 1.5rem);
 }
 
-@media (min-width: 768px) { /* md breakpoint in Tailwind CSS */
+@media (min-width: 768px) {
   .crm-cont-img {
       width: calc(100vw - 8rem);
   }
@@ -338,7 +337,6 @@ html {
   background-color: #23c55e;
   padding: 0 16px;
 
-  /* Media Query for larger screens (md breakpoint) */
   @media (min-width: 768px) {
     flex-direction: row;
     padding: 0 94px;
@@ -350,7 +348,6 @@ html {
 
 .ready-img {
 
-  /* Media Query for larger screens (md breakpoint) */
   @media (min-width: 768px) {
     display: hidden;
   }
@@ -360,12 +357,11 @@ html {
 
 .build-text {
   font-size: 40px;
-  line-height: 1.25; /* Equivalent to "leading-tight" */
+  line-height: 1.25; 
   color: #a0f8c6;
 
-  /* Media Query for larger screens (md breakpoint) */
   @media (min-width: 768px) {
-    line-height: normal; /* Equivalent to "leading-normal" */
+    line-height: normal;
   }
 }
 
@@ -389,24 +385,24 @@ html {
 .builder-cont {
   position: relative;
   background-color: #232529;
-  padding: 116px 16px; /* py-[116px] and px-4 */
+  padding: 116px 16px; 
 }
 
-@media (min-width: 768px) { /* md breakpoint */
+@media (min-width: 768px) { 
   .builder-cont {
-    padding-left: 94px; /* md:px-[94px] */
+    padding-left: 94px; 
     padding-right: 94px;
   }
 }
 
 
 .bt-builder {
-  margin: 0 auto; /* mx-auto */
-  border: 1px solid #31373D; /* border and border-[#31373D] */
-  color: #EDEEF0; /* text-[#EDEEF0] */
-  background-color: transparent; /* bg-transparent */
-  border-radius: 0.5rem; /* rounded-lg */
-  display: block; /* block */
+  margin: 0 auto;
+  border: 1px solid #31373D; 
+  color: #EDEEF0; 
+  background-color: transparent;
+  border-radius: 0.5rem;
+  display: block;
 }
 
 
