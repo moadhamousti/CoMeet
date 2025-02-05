@@ -471,3 +471,14 @@ html {
   background: linear-gradient(var(--color-gray-950), var(--color-gray-950)) padding-box,
               conic-gradient(from 90deg, var(--color-violet-400), var(--color-fuchsia-400), var(--color-amber-300), var(--color-teal-300), var(--color-violet-400));
 }
+
+
+/* .cl-signIn-root,
+.cl-signUp-root
+{
+  border: 4px solid transparent;
+  border-radius: 15px;
+  background: linear-gradient(var(--color-gray-950), var(--color-gray-950)) padding-box,
+              conic-gradient(from 90deg, var(--color-violet-400), var(--color-fuchsia-400), var(--color-amber-300), var(--color-teal-300), var(--color-violet-400));
+} */
+
