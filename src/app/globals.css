@@ -482,23 +482,3 @@ html {
               conic-gradient(from 90deg, var(--color-violet-400), var(--color-fuchsia-400), var(--color-amber-300), var(--color-teal-300), var(--color-violet-400));
 } */
 
-/* .trans{
-  display: flex;
-  flex: 0 0 auto;
-  gap: 6rem; 
-  padding-right: 6rem;
-}
-.shadow-dark {
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
-}
-
-
-
-
-.cl-footer, .cl-internal-4x6jej, .cl-internal-1dauvpw{
-  display: hidden;
-}
-
-.cl-internal-16vtwdp p{
-  color: wheat;
-} */
