@@ -9,7 +9,7 @@ function Hero() {
           New
         </div>
         <p className="text-gray-800 text-sm font-medium">
-          How Pallet uses Attio to power their GTM
+          See how devs code, chat, and ship faster together.
         </p>
         <div className="text-gray-500">
           <ChevronRight size={18} />
