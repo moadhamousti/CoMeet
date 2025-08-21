@@ -29,7 +29,7 @@ function HeroSection() {
           <Button
             variant="outline"
           >
-            <Link href="/sign-in">Talk to sales</Link>
+            <Link href="/sign-in">See More</Link>
           </Button>
         </div>
 
