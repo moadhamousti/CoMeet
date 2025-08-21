@@ -19,7 +19,8 @@ function HeroSection() {
         </div>
 
         <p className="phrase">
-          Fast, collaborative, and developer-first, CodeSync makes it effortless to code, chat, and build together in real time.
+          Fast, collaborative, and developer-first, CodeSync makes it effortless to <br></br>
+          code, chat, and build together in real time.
         </p>
 
         <div className="flex gap-4 justify-center">
